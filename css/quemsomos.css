@@ -133,14 +133,10 @@
     line-height: 77px;
 }*/
 
-.movement {
-    background-image: url(../img/richarlison.jpeg);
-    background-repeat: no-repeat;
-    margin-top: 1000px;
-}
 
 .numbers p {
     position: absolute;
+    margin-left: 200px;
     width: 391px;
     height: 261px;
     top: 2100px;
