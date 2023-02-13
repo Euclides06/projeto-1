@@ -3,13 +3,13 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/produto.css">
     <link rel="stylesheet" href="./css/quemsomos.css">
@@ -19,7 +19,7 @@
 <body>
     <header>
         <div class="container">
-            <a href="#"><img class="logotipo" src="./img/logotipo.png" /></a>
+            <a href="index.html"><img class="logotipo" src="./img/logotipo.png" /></a>
             <nav class="menu-principal">
                 <ul>
                     <li><a href="lancamentos.html">Lançamentos</a></li>
@@ -30,11 +30,23 @@
                     <li><a href="colecoes.html">Coleções</a></li>
                 </ul>
             </nav>
+            <div class="menu-mobile">
+                <div class="icone-menu" id="iconeMenu"><a href="javascript:void(0);" onclick="menuMobile()"><span class="material-symbols-outlined">menu</span></a></div>
+                <ul class="menuitems" id="menuitems">
+                    <li class="fecharmenu"><a href="javascript:void(0);" onclick="menuMobile()">X</a></li>
+                    <li><a href="lancamentos.html">Lançamentos</a></li>
+                    <li><a href="paraElas.html">Para Elas</a></li>
+                    <li><a href="paraEles.html">Para Eles</a></li>
+                    <li><a href="infantil.html">Infantil</a></li>
+                    <li><a href="esportes.html">Esportes</a></li>
+                    <li><a href="colecoes.html">Coleções</a></li>
+                </ul>
+            </div>
             <input type="text" class="header-search" placeholder="Buscar">
-            <a href="./login.html"><span class="material-symbols-sharp header-icon">person</span></a>
-            <span class="material-symbols-sharp header-icon">shopping_cart</span>
+            <a href="listadedesejos.html"><span class="material-symbols-outlined header-icon">favorite</span></a>
+            <a href="login.html"><span class="material-symbols-sharp header-icon">person</span></a>
+            <a href="carrinho-compras.html"><span class="material-symbols-sharp header-icon">shopping_cart</span></a>
         </div>
-    </header>
 
     <main>
         <div class="nav-bar">
