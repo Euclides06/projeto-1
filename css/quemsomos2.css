@@ -56,6 +56,7 @@
     background-image: url(../img/banner-quem-somos.png);
     background-position: center;
     background-repeat: no-repeat;
+    height: 80%;
 }
 
 .slide .container {
@@ -90,12 +91,12 @@
 
 .apresentacao-empresa {
     display: flex;
+    margin-top: 50px;
 }
 
 .sobre-infos {
     width: 375px;
     height: 77px;
-    margin-left: 360px;
     font-weight: 900;
 }
 
@@ -133,6 +134,7 @@
     font-size: 50px;
     line-height: 60px;
     letter-spacing: 0.2em;
+    color: #F6F6F6;
 }
 
 .container .movimento {
@@ -148,13 +150,14 @@
 .movimento-frase {
     width: 700px;
     height: 36px;
-    margin-left: -650px;
+    margin-left: -700px;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 36px;
     margin-top: 400px;
     padding-bottom: 50px;
+    color: #F6F6F6;
 }
 
 
@@ -214,36 +217,35 @@
 
 .contato-infos {
     background-image: url(../img/runner.png);
-    background-position: center;
     background-repeat: no-repeat;
-    height: 950px;
-    width: 1900px;
+    width: 100%;
 }
 
-.contato-infos .titulo {
+.titulo {
     width: 317px;
     height: 84px;
     left: 260px;
     font-style: normal;
     font-weight: 900;
     font-size: 50px;
-    margin-top: 10px;
+    margin-top: 50px;
     line-height: 84px;
     border-bottom: 1px solid #000;
-    margin-left: 350px;
+    margin-left: 80px;
+    padding-top: 80px;
     }
 
-.contato-infos .subtitulo-cidade {
+.subtitulo-cidade {
     font-style: normal;
     font-weight: 900;
     font-size: 50px;
     line-height: 60px;
     letter-spacing: 0.05em;
-    margin-top: 10px;
-    margin-left: 350px;
+    margin-top: 50px;
+    margin-left: 80px;
 }
 
-.contato-infos .contatos {
+.contatos {
     width: 773px;
     height: 84px;
     font-style: normal;
@@ -251,12 +253,15 @@
     font-size: 50px;
     line-height: 60px;
     letter-spacing: 0.05em;
-    margin-top: -50px;
+    margin-top: 50px;
     margin-bottom: 100px;
-    margin-left: 350px;
+    margin-left: 80px;
 }
 
-
-
+.apresentacao-empresa{margin-top: 120px;}
+.contato-infos{height: 1150px; margin-top: 50px;}
+.subtitulo{padding-top: 220px;}
+.apresentacao{background-image: url(../img/MartaCopaItalia\ 1.png); background-repeat: no-repeat;}
+.sobre{height: 500px;}
 
 

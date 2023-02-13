@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -16,10 +19,11 @@
     <link rel="stylesheet" href="./css/listadedesejos.css">
     <title>Sneakers House - Lista de Desejos</title>
 </head>
+
 <body>
     <header>
         <div class="container">
-            <a href="#"><img class="logotipo" src="./img/logotipo.png" /></a>
+            <a href="index.html"><img class="logotipo" src="./img/logotipo.png" /></a>
             <nav class="menu-principal">
                 <ul>
                     <li><a href="lancamentos.html">Lançamentos</a></li>
@@ -30,9 +34,22 @@
                     <li><a href="colecoes.html">Coleções</a></li>
                 </ul>
             </nav>
+            <div class="menu-mobile">
+                <div class="icone-menu" id="iconeMenu"><a href="javascript:void(0);" onclick="menuMobile()"><span class="material-symbols-outlined">menu</span></a></div>
+                <ul class="menuitems" id="menuitems">
+                    <li class="fecharmenu"><a href="javascript:void(0);" onclick="menuMobile()">X</a></li>
+                    <li><a href="lancamentos.html">Lançamentos</a></li>
+                    <li><a href="paraElas.html">Para Elas</a></li>
+                    <li><a href="paraEles.html">Para Eles</a></li>
+                    <li><a href="infantil.html">Infantil</a></li>
+                    <li><a href="esportes.html">Esportes</a></li>
+                    <li><a href="colecoes.html">Coleções</a></li>
+                </ul>
+            </div>
             <input type="text" class="header-search" placeholder="Buscar">
+            <a href="listadedesejos.html"><span class="material-symbols-outlined header-icon">favorite</span></a>
             <a href="login.html"><span class="material-symbols-sharp header-icon">person</span></a>
-            <span class="material-symbols-sharp header-icon">shopping_cart</span>
+            <a href="carrinho-compras.html"><span class="material-symbols-sharp header-icon">shopping_cart</span></a>
         </div>
         <div class="menu-navbar">
             <ul class="container">
@@ -40,50 +57,79 @@
                     <a href="./index.html">Início</a>
                 </li>
                 <span> > </span>
-                <li>
-                    <a href="">Lista de Desejos</a>
+                <li class="link-pagina-atual">
+                    <a href="">Coleções</a>
                 </li>
-                
             </ul>
         </div>
     </header>
 
-    <main>
-      <div class="container lista-de-desejos">
-        <ul class="lista-desejos-texto">
-            <li class="lista-desejos-texto-titulo">
-                <div class="lista-desejos-titulo">
-                    <h2>LISTA DE DESEJOS</h2>
-                </div>
-            </li>
-        </ul>
+    <main class="m-4">
+        <div class="container lista-de-desejos">
+            <ul class="lista-desejos-texto">
+                <li class="lista-desejos-texto-titulo">
+                    <div class="lista-desejos-titulo">
+                        <h2>LISTA DE DESEJOS</h2>
+                    </div>
+                </li>
+            </ul>
             <ul class="lista-desejo-comandos">
-            <li class="lista-desejos-texto-compartilhar">
-                <div class="lista-desejos-compartilhar-lista">Compartilhar lista</div> 
-            </li>
-                
-            <li class="lista-desejos-texto-nova-lista">
-                <div class="lista-desejos-compartilhar-lista">Criar nova lista</div>
-            </li>
-        </ul>
-            
-      
+                <li class="lista-desejos-texto-compartilhar">
+                    <div class="lista-desejos-compartilhar-lista">Compartilhar lista</div>
+                </li>
 
-        <div class="lista-desejos-buscar-filtrar">
-            <div class="lista-desejos-buscar">
-                <input type="text" class="list-search" placeholder="Buscar">
-            </div>
-            <div class="lista-desejos-filtrar">
-                <h6>Filtrar ˆ</h6>
+                <li class="lista-desejos-texto-nova-lista">
+                    <div class="lista-desejos-compartilhar-lista cl-red">Criar nova lista</div>
+                </li>
+            </ul>
+            <div class="lista-desejos-buscar-filtrar">
+                <div class="lista-desejos-buscar">
+                    <input type="text" class="list-search" placeholder="Buscar">
+                </div>
+                <div class="lista-desejos-filtrar">
+                    <h6>Filtrar ˆ</h6>
+                </div>
+
             </div>
 
-        </div>
-  
             <div class="lista-produtos-produto">
                 <ul class="lista-desejo-lista-produtos">
                     <li class="lista-desejo-lista-mayze">
                         <div class="tenis-mayze-imagem">
                             <img class="lista-desejo-produto" src="./img/puma-mayze.png" alt="">
+                        </div>
+                        <div class="tenis-mayze-informacoes">
+                            <h4>MAZE FEMININO</h4>
+                            <div class="imgem-valores corretos">
+                                <span class="valor">R$599,90</span>
+                            </div>
+                            <p class="tenis-cores">Cores: Roxo, rosa, amarelo e branco</p>
+                            <p class="tenis-tamanho">Tamanho: 36</p>
+                            <h5 class="produto-quantidade">Quantidade</h5>
+                            <div class="escolhertamanho">
+                                <div class="escolhertamanho">
+                                    <select class="select-qtdade-box">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="bl-2">
+                                <button class="desejos-adicionar-carrinho-btn">Adicionar ao carrinho</button>
+                                <a href=""><span class="material-symbols-outlined botao-remover bt-remover">delete</span></a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--segundo produto-->
+
+                    <li class="lista-desejo-lista-mayze">
+                        <div class="tenis-mayze-imagem">
+                            <img class="lista-desejo-produto" src="./img/nike-colorido-atual.png" alt="">
                         </div>
 
                         <div class="tenis-mayze-informacoes">
@@ -106,45 +152,16 @@
                                     </select>
                                 </div>
                             </div>
-                            <button class="desejos-adicionar-carrinho-btn">Adicionar ao carrinho</button>
-                            <span class="material-symbols-outlined botao-remover">delete</span>
-                        </div>
-                    </li>
-
-                    <!--segundo produto-->
-
-                    <li class="lista-desejo-lista-mayze">
-                        <div class="tenis-mayze-imagem">
-                            <img class="lista-desejo-produto" src="./img/puma-mayze.png" alt="">
-                        </div>
-
-                        <div class="tenis-mayze-informacoes">
-                            <h4>MAZE FEMININO</h4>
-                            <div class="imgem-valores corretos">
-                                <span class="valor">R$599,90</span>
+                            <div class="bl-2">
+                                <button class="desejos-adicionar-carrinho-btn">Adicionar ao carrinho</button>
+                                <a href=""><span class="material-symbols-outlined botao-remover bt-remover">delete</span></a>
                             </div>
-                            <p class="tenis-cores">Cores: Roxo, rosa, amarelo e branco</p>
-                            <p class="tenis-tamanho">Tamanho: 37</p>
-                            <h5 class="produto-quantidade">Quantidade</h5>
-                            <div class="escolhertamanho">
-                                <select class="select-qtdade-box">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                </select>
-                            </div>
-                            <button class="desejos-adicionar-carrinho-btn">Adicionar ao carrinho</button>
-                            <span class="material-symbols-outlined botao-remover">delete</span>
                         </div>
                     </li>
                     <!--tenis tres-->
-
                     <li class="lista-desejo-lista-mayze">
                         <div class="tenis-mayze-imagem">
-                            <img class="lista-desejo-produto" src="./img/puma-mayze.png" alt="">
+                            <img  src="./img/nike-sb-atualizado.png" alt="">
                         </div>
 
                         <div class="tenis-mayze-informacoes">
@@ -153,74 +170,70 @@
                                 <span class="valor">R$599,90</span>
                             </div>
                             <p class="tenis-cores">Cores: Roxo, rosa, amarelo e branco</p>
-                            <p class="tenis-tamanho">Tamanho: 38</p>
+                            <p class="tenis-tamanho">Tamanho: 36</p>
                             <h5 class="produto-quantidade">Quantidade</h5>
                             <div class="escolhertamanho">
-                                <select class="select-qtdade-box">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                </select>
+                                <div class="escolhertamanho">
+                                    <select class="select-qtdade-box">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
                             </div>
-                            <span class="material-symbols-outlined botao-remover">delete</span>
+                            <div class="bl-2">
+                                <button class="desejos-adicionar-carrinho-btn">Adicionar ao carrinho</button>
+                                <a href=""><span class="material-symbols-outlined botao-remover bt-remover">delete</span></a>
+                            </div>
                         </div>
                     </li>
-
-
-
-
                 </ul>
-            </div>
-
-        <!-- seção de produtos para adicionar à lista de desejos -->
-        <section class="add-to-list">
-            <h2>ADICIONE À SUA LISTA DE DESEJOS</h2>
-            <ul class="lista-categorias">
-                <li>
-                    <div class="lista-produtos">
-                        <img src="./img/nizza-trek.png" alt="">
-                        <h4>Nizza Trek</h4>
-                        <span class="valor">R$599,90</span>
-                        <button class="botao-eu-quero">ADICIONAR</button>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="lista-produtos">
-                        <img src="./img/nizza-trek.png" alt="">
-                        <h4>Nizza Trek</h4>
-                        <span class="valor">R$599,90</span>
-                        <button class="botao-eu-quero">ADICIONAR</button>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="lista-produtos">
-                        <img src="./img/nizza-trek.png" alt="">
-                        <h4>Nizza Trek</h4>
-                        <span class="valor">R$599,90</span>
-                        <button class="botao-eu-quero">ADICIONAR</button>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="lista-produtos">
-                        <img src="./img/nizza-trek.png" alt="">
-                        <h4>Nizza Trek</h4>
-                        <span class="valor">R$599,90</span>
-                        <button class="botao-eu-quero">ADICIONAR</button>
-                    </div>
-                </li>
+                <div class="bt-carrinho">
+                    <button class="botao-vermelho">ADICIONAR TODOS AO CARRINHO</button>
                 </div>
-            </ul>
-        </section>
-    </div>
+                <!-- seção de produtos para adicionar à lista de desejos -->
+                <section class="add-to-list">
+                    <h2 class="produto-infos-titulo pit-1">ADICIONE À SUA LISTA DE DESEJOS</h2>
+                    <ul class="lista-categorias">
+                        <li>
+                            <div class="lista-produtos">
+                                <img src="./img/nizza-trek.png" alt="">
+                                <h4>Nizza Trek</h4>
+                                <span class="valor">R$599,90</span>
+                                <button class="botao-eu-quero">ADICIONAR</button>
+                            </div>
+                        </li>
 
+                        <li>
+                            <div class="lista-produtos">
+                                <img src="./img/nizza-trek.png" alt="">
+                                <h4>Nizza Trek</h4>
+                                <span class="valor">R$599,90</span>
+                                <button class="botao-eu-quero">ADICIONAR</button>
+                            </div>
+                        </li>
 
-        
+                        <li>
+                            <div class="lista-produtos">
+                                <img src="./img/nizza-trek.png" alt="">
+                                <h4>Nizza Trek</h4>
+                                <span class="valor">R$599,90</span>
+                                <button class="botao-eu-quero">ADICIONAR</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lista-produtos">
+                                <img src="./img/nizza-trek.png" alt="">
+                                <h4>Nizza Trek</h4>
+                                <span class="valor">R$599,90</span>
+                                <button class="botao-eu-quero">ADICIONAR</button>
+                            </div>
+                        </li>
+            </section>
+        </div>
     </main>
 
     <footer>
@@ -307,6 +320,7 @@
 
     </footer>
 
-    
+
 </body>
+
 </html>

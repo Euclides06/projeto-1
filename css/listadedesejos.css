@@ -90,11 +90,6 @@ select.select-qtdade-box {
     padding: 5px;
 }
 
-.lista-desejo-lista-mayze {
-    padding-bottom: 70px;
-    border-bottom: 1px solid #000;
-    padding-top: 50px;
-}
 
 .lista-desejo-lista-mayze img {
     background: linear-gradient(180deg, #F6F6F6 0%, #D6D6D6 100%);
@@ -137,46 +132,18 @@ select.select-qtdade-box {
 .desejos-adicionar-carrinho-btn {
     background-color: transparent;
     border-color: #000;
-    padding: 14px 15px;
+    padding: 5px 40px;
     gap: 10px;
     margin-top: 30px;
+    
 }
 
 .desejos-adicionar-carrinho-btn:hover {
     background-color: #FF4F4F;
 }
 
-.botao-remover {
-    border: 1px solid #000;
-    color: #000;
-    margin-left: 700px;
-    margin-right: 200px;
-    margin-top: 10px;
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 24px;
-}
 
-.botao-remover:hover {
-    background-color: #FF4F4F;
-    cursor: pointer;
-}
 
-.botao-eu-quero {
-    border: 1px solid #000000;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-} 
-
-.add-to-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: space-between;
-    column-gap: 1rem;
-    margin-top: 100px;
-}
 
 .lista-categorias li {
     border-radius: 10px;
@@ -185,3 +152,12 @@ select.select-qtdade-box {
     text-align: center;
     margin-bottom: 50px;
 }
+
+.cl-red{color: #FF4F4F; margin-left: 80px;}
+.bl-2 {display: flex; justify-content: space-between;}
+.bt-remover{margin-right: 100px;}
+.select-qtdade-box{border-radius: 10px;}
+.lista-desejo-lista-mayze{margin-bottom: 40px; border-bottom: #000 1px solid; padding-bottom: 40px;}
+.pit-1{margin-left: 50px;}
+.bt-carrinho{display: flex; justify-content: end;}
+.botao-eu-quero{margin-top: 15px;}
