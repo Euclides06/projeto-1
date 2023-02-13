@@ -28,7 +28,7 @@ button{font-family: 'Lato', sans-serif; width: fit-content; padding: 15px 30px; 
 
 
 header{background-color: #000; border-top: 15px solid #FF4F4F;}
-header .container{padding: 20px 0; display: flex; align-items: center; color: #fff;}
+header .container{padding: 20px 0; display: flex; align-items: center; color: #fff; justify-content: space-between;}
 .logotipo{height: fit-content;}
 
 .menu-principal ul{display: flex; list-style: none; text-transform: uppercase;}
@@ -36,15 +36,16 @@ header .container{padding: 20px 0; display: flex; align-items: center; color: #f
 .menu-principal ul li a:hover{color:#FF4F4F;}
 .menu-navbar span{color:#000;}
 
-.header-icon, .header-search{margin-left: 10px; color: #fff;}
+.header-icon, .header-search{margin-left: 10px; color: #fff; margin-right: 10px;}
 
 input.header-search {padding: 5px;}
 
 .menu-navbar {background: #F5F5F5; padding: 1px;}
-.menu-navbar ul {display: flex; list-style: none; grid-gap: 1rem;}
+.menu-navbar ul {display: flex; list-style: none; grid-gap: 1rem; justify-content: flex-start;}
 .menu-navbar ul a {text-decoration: none;}
 .link-pagina-atual a {color: red;}  
 
+.slider-mobile{display: none;}
 .slide{background-color: #000;}
 .slide01 {background-image: url(../img/banner_01.png); background-position: center; background-repeat: no-repeat;}
 
@@ -130,3 +131,7 @@ footer h3{margin-top: 0;}
 .colunas-footer {padding: 15px;}
 .colunas-footer:first-child {padding-left: 0px;}
 .colunas-footer:last-child {padding-right: 0px;}
+
+
+
+.menu-mobile{display: none;}
