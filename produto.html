@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet"
+    <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
         <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/produto.css">
     <title>Sneakers House - Forum</title>
@@ -19,7 +20,7 @@
 <body>
     <header>
         <div class="container">
-            <a href="index.html"><img class="logotipo" src="./img/logotipo.png" /></a>
+            <a href="#"><img class="logotipo" src="./img/logotipo.png" /></a>
             <nav class="menu-principal">
                 <ul>
                     <li><a href="lancamentos.html">Lançamentos</a></li>
@@ -30,22 +31,9 @@
                     <li><a href="colecoes.html">Coleções</a></li>
                 </ul>
             </nav>
-            <div class="menu-mobile">
-                <div class="icone-menu" id="iconeMenu"><a href="javascript:void(0);" onclick="menuMobile()"><span class="material-symbols-outlined">menu</span></a></div>
-                <ul class="menuitems" id="menuitems">
-                    <li class="fecharmenu"><a href="javascript:void(0);" onclick="menuMobile()">X</a></li>
-                    <li><a href="lancamentos.html">Lançamentos</a></li>
-                    <li><a href="paraElas.html">Para Elas</a></li>
-                    <li><a href="paraEles.html">Para Eles</a></li>
-                    <li><a href="infantil.html">Infantil</a></li>
-                    <li><a href="esportes.html">Esportes</a></li>
-                    <li><a href="colecoes.html">Coleções</a></li>
-                </ul>
-            </div>
             <input type="text" class="header-search" placeholder="Buscar">
-            <a href="listadedesejos.html"><span class="material-symbols-outlined header-icon">favorite</span></a>
-            <a href="login.html"><span class="material-symbols-sharp header-icon">person</span></a>
-            <a href="carrinho-compras.html"><span class="material-symbols-sharp header-icon">shopping_cart</span></a>
+            <a href="./login.html"><span class="material-symbols-sharp header-icon">person</span></a>
+            <span class="material-symbols-sharp header-icon">shopping_cart</span>
         </div>
         <div class="menu-navbar">
             <ul class="container">
@@ -89,11 +77,12 @@
                         <div class="escolhertamanho">
                             <h3 class="produto-infos-tamanhos-titulo">Tamanhos</h3>
                             <select class="select-qtdade-box">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
                             </select>
                         </div>
                         <div class="escolhercores">
@@ -130,14 +119,14 @@
                     <p class="descricao-paragrafo">
                         O tênis adidas Forum sempre marcou presença. Mas por que se limitar a apenas um? Ao colocar este tênis nos pés, você pode levar seu estilo a novos patamares com o solado plataforma e, ao mesmo tempo, expressar seu amor pelo planeta através dos avançados materiais do cabedal.
                     </p>
-                    <h4 class="descricao-especificacoes-titulo">ESPECIFICAÇÕES ˆ</h4>
+                    <h4 class="descricao-especificacoes-titulo">ESPECIFICAÇÕES</h4>
                     <ul class="descricao-especificacoes-lista">
                         <li>Fecho de cadarço</li>
                         <li>O cabedal contém pelo menos 50% de conteúdo reciclado</li>
                         <li>Solado de borracha plataforma</li>
                         <li>Acolchoado</li>
                         <li>Cabedal sintético</li>
-                        <li> veritatis voluptate dicta non</li>
+                        <li>Lavável</li>
                     </ul>
                 </div>
                 <div class="sobre-dir">
@@ -205,54 +194,55 @@
 
         <section class="container carousel-produtos-semelhantes">
             <h2>PRODUTOS<strong> SEMELHANTES</strong></h2>
-            <ul class="lista-categorias">
-                <li>
+            <ul class="lista-semelhantes">
+                <!-- <li>
                     <div class="lista-produtos-semelhantes">
-                        <a href="#"><img src="./img/tenis_sb_amarelo.png" /></a>
+                        <a href="#"><img src="./img/tenis-branco.png" /></a>
                     
                         <h4>Nike SB Zoom Blazer Mid Premium</h4>
-                        <div class="imgem-valores">
+                        <div class="imagem-valores">
+                            <span class="promocao">R$639,99</span>
+                            <span class="valor-real">R$799,99</span>
+                        </div>
+                        <button class="botao-eu-quero">EU QUERO</button>
+                    </div>
+                </li> -->
+                 <li>
+                    <div class="lista-produtos-semelhantes">
+                        <a href="#"><img src="./img/tenis-colorido.png" /></a>
+                    
+                        <h4>Nike SB Blazer Court Mid Premium</h4>
+                        <div class="imagem-valores">
+                            <span class="promocao">R$419,99</span>
+                            <span class="valor-real">R$649,99</span>
+                        </div>
+                        <button class="botao-eu-quero">EU QUERO</button>
+                    </div>
+                </li>
+                 <li>
+                    <div class="lista-produtos-semelhantes">
+                        <a href="#"><img src="./img/tenis-verde-escuro.png" /></a>
+                    
+                        <h4>Sneaker Politics x Asics Gel Lyte</h4>
+                        <div class="imagem-valores">
                             <span class="promocao">R$639,99</span>
                             <span class="valor-real">R$799,99</span>
                         </div>
                         <button class="botao-eu-quero">EU QUERO</button>
                     </div>
                 </li>
-                <li>
+            <li>
                     <div class="lista-produtos-semelhantes">
-                        <a href="#"><img src="./img/nike-sb.png" /></a>
+                        <a href="#"><img src="./img/tenis-branco.png"/></a>
                     
-                        <h4>Nike SB Blazer Court Mid Premium</h4>
-                        <div class="imgem-valores">
-                            <span class="promocao">R$419,90</span>
-                            <span class="valor-real">R$649,90</span>
+                        <h4>New Balance 550 UNC </h4>
+                        <div class="imagem-valores">
+                            <span class="promocao">R$639,99</span>
+                            <span class="valor-real">R$799,99</span>
                         </div>
                         <button class="botao-eu-quero">EU QUERO</button>
                     </div>
                 </li>
-                <div class="lista-produtos-semelhantes">
-                    <a href="#"><img src="./img/tenis_sb_amarelo.png" /></a>
-                
-                    <h4>Nike SB Zoom Blazer Mid Premium</h4>
-                    <div class="imgem-valores">
-                        <span class="promocao">R$639,99</span>
-                        <span class="valor-real">R$799,99</span>
-                    </div>
-                    <button class="botao-eu-quero">EU QUERO</button>
-                </div>
-            </li>
-            <li>
-                <div class="lista-produtos-semelhantes">
-                    <a href="#"><img src="./img/nike-sb.png" /></a>
-                
-                    <h4>Nike SB Blazer Court Mid Premium</h4>
-                    <div class="imgem-valores">
-                        <span class="promocao">R$419,90</span>
-                        <span class="valor-real">R$649,90</span>
-                    </div>
-                    <button class="botao-eu-quero">EU QUERO</button>
-                </div>
-            </li>
             </ul>
         </section>
 
