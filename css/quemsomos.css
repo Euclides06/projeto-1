@@ -31,203 +31,232 @@
 }
 
 
-
-.qs-image {
-    width: 100%;
+.nike-rosa {
+    width: 499.34px;
+    height: 499.34px;
+    margin-left: 850px;
+    margin-top: -400px;
 }
 
-.first-title {
-    position: absolute;
-    width: 603px;
-    margin-left: 150px;
-    top: 220px;
-    font-family: 'Lato';
-    font-style: normal;
+.nike-amarelo {
+    width: 768px;
+    height: 768px;
+    margin-left: 800px;
+    margin-top: -200px;
+    margin-bottom: -200px;
+}
+
+
+.section {
+    display: block;
+    
+}
+
+.slide_01 {
+    background-image: url(../img/banner-quem-somos.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 560px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.slide .titulo {
     font-weight: 900;
     font-size: 64px;
     letter-spacing: 0.05em;
-
+    color: #000;
+    margin: 0;
+    line-height: 77px;
 }
 
-.title-description   {
-    position: absolute;
-    width: 599px;
-    margin-left: 150px;
-    top: 439px;
-    font-family: 'Lato';
-    font-style: normal;
+.slide .subtitulo {
     font-weight: 700;
     font-size: 30px;
-    line-height: 36px;
     letter-spacing: 0.05em;
+    color: #000;
+    margin: 0;
+    line-height: 30px;
 }
 
+.apresentacao-empresa {
+    display: flex;
+}
 
-.about-title {
-    position: absolute;
+.sobre-infos {
     width: 375px;
     height: 77px;
-    margin-left: 150px;
-    top: 770px;
-    font-family: 'Lato';
-    font-style: normal;
+    margin-left: 360px;
     font-weight: 900;
-    font-size: 50px;
-    line-height: 77px;
-    letter-spacing: 0.05em;
 }
 
-.about-description {
-    position: absolute;
+.sobre-titulo {
+    font-weight: 900;
+    font-size: 64px;
+}
+
+.sobre-descricao {
     width: 773px;
-    height: 277px;
-    margin-left: 150px;
-    top: 900px;
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
     letter-spacing: 0.05em;
+    font-style: normal;
 }
 
-.nike-rosa {
-    position: absolute;
-    width: 499.34px;
-    height: 499.34px;
-    left: 803px;
-    top: 523.06px;
+.apresentacao {
+    display: block;
+    margin-top: -10px;
+    background: linear-gradient(180deg, #F6F6F6 0%, #D6D6D6 100%);
 }
 
-.nike-amarelo {
-    position: absolute;
-    width: 768px;
-    height: 768px;
-    left: 740px;
-    top: 715px;
+.apresentacao .container {
+    display: flex;
+    width: 1200px;
 }
 
-.movement-title {
-    position: absolute;
+.container .segundo-titulo {
+    width: 700px;
+    height: 223px;
+    font-style: normal;
+    font-weight: 900;
+    margin-top: 200px;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0.2em;
+}
+
+.container .movimento {
+    font-size: 80px;
+    font-weight: 900;
     width: 650px;
     height: 223px;
-    margin-left: 150px;
-    top: 1642px;
-    font-family: 'Lato';
+    margin-left: 0px;
+    line-height: 96px;
+    letter-spacing: 0.2em;
+}
+
+.movimento-frase {
+    width: 700px;
+    height: 36px;
+    margin-left: -650px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    margin-top: 400px;
+    padding-bottom: 50px;
+}
+
+
+
+.apresentacao-numeros {
+    margin-top: 0px;
+    display: block;
+}
+
+.numeros {
+    display: flex;
+    justify-content:flex-start;
+    align-items:baseline;
+    font-style: normal;
+    gap: 100px;
+}
+
+.num-titulo {
+    display: block;
+}
+
+.numeros-titulo {
+    display: flex;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    margin-top: 100px;
+    width: 281px;
+    height: 77px;
+    margin-left: 0px;
+    margin-bottom: -50px;
+}
+
+.numero01, .numero02, .numero03 {
+    font-size: 80px;
+    font-style: normal;
+}
+
+.numeros .word-apart {
+    font-size: 60px;
+    width: 100px;
+}
+
+.numeros span {
+    color: #FF4F4F;
+    font-size: 60px;
+}
+
+.numeros p {
+    font-size: 60px;
+}
+
+.numeros {
+    width: 1200px;
+    padding-bottom: 100px;
+}
+
+.contato-infos {
+    background-image: url(../img/runner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 950px;
+    width: 1900px;
+}
+
+.contato-infos .titulo {
+    width: 317px;
+    height: 84px;
+    left: 260px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    margin-top: 10px;
+    line-height: 84px;
+    border-bottom: 1px solid #000;
+    margin-left: 350px;
+    }
+
+.contato-infos .subtitulo-cidade {
     font-style: normal;
     font-weight: 900;
     font-size: 50px;
     line-height: 60px;
-    letter-spacing: 0.2em;
-    color: #000;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    margin-left: 350px;
 }
 
-.movement-word {
-    position: absolute;
-    width: 505px;
-    height: 36px;
-    margin-left: 150px;
-    top: 1750px;
-    font-family: 'Lato';
+.contato-infos .contatos {
+    width: 773px;
+    height: 84px;
     font-style: normal;
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 36px;
-    letter-spacing: 0.2em;
-    color: #000;
-}
-
-.movement-description {
-    position: absolute;
-    width: 505px;
-    height: 36px;
-    margin-left: 150px;
-    top: 1865px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: 0.2em;
-    color: #000;
-}
-
-/*.numbers-title {
-    position: absolute;
-    width: 281px;
-    height: 77px;
-    left: 150px;
-    top: 1500px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 77px;
-}*/
-
-
-.numbers p {
-    position: absolute;
-    margin-left: 200px;
-    width: 391px;
-    height: 261px;
-    top: 2100px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 120px;
-    letter-spacing: 0.00em;
-    color: #000000;
-
-}
-
-span {
-    color: #FF4F4F;
-}
-
-.word-apart {
-    color: #000;
-    font-size: 64px;
-}
-
-.word {
-    font-size: 64px;
-}
-
-.numbers-01 {
-    left: 150px;
-}
-
-.numbers-02 {
-    left: 556px;
-}
-
-.numbers-03 {
-    left: 990px;
-}
-
-.titulo {
-    font-size: 70px;
-    padding-top: 146px;
-}
-
-.subtitulo-cidade {
-    font-size: 50px;
-    font-weight: 900;
-}
-
-.contacts {
-    font-size: 50px;
     font-weight: 400;
-    font-style: normal;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0.05em;
+    margin-top: -50px;
+    margin-bottom: 100px;
+    margin-left: 350px;
 }
 
-.image {
-    background-image: url(../img/runner.png); 
-    background-position: center; 
-    background-repeat: no-repeat;
-    height: 1100px;
-    margin-top: 2000px;
-    width: 100%;
-}
+
+
+
+

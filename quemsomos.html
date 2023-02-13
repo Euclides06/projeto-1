@@ -3,23 +3,23 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/produto.css">
-    <link rel="stylesheet" href="./css/quemsomos.css">
+    <link rel="stylesheet" href="./css/quemsomos2.css">
 
     <title>Sneakers House - Quem Somos</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <a href="index.html"><img class="logotipo" src="./img/logotipo.png" /></a>
+            <a href="#"><img class="logotipo" src="./img/logotipo.png" /></a>
             <nav class="menu-principal">
                 <ul>
                     <li><a href="lancamentos.html">Lançamentos</a></li>
@@ -30,95 +30,90 @@
                     <li><a href="colecoes.html">Coleções</a></li>
                 </ul>
             </nav>
-            <div class="menu-mobile">
-                <div class="icone-menu" id="iconeMenu"><a href="javascript:void(0);" onclick="menuMobile()"><span class="material-symbols-outlined">menu</span></a></div>
-                <ul class="menuitems" id="menuitems">
-                    <li class="fecharmenu"><a href="javascript:void(0);" onclick="menuMobile()">X</a></li>
-                    <li><a href="lancamentos.html">Lançamentos</a></li>
-                    <li><a href="paraElas.html">Para Elas</a></li>
-                    <li><a href="paraEles.html">Para Eles</a></li>
-                    <li><a href="infantil.html">Infantil</a></li>
-                    <li><a href="esportes.html">Esportes</a></li>
-                    <li><a href="colecoes.html">Coleções</a></li>
-                </ul>
-            </div>
             <input type="text" class="header-search" placeholder="Buscar">
-            <a href="listadedesejos.html"><span class="material-symbols-outlined header-icon">favorite</span></a>
-            <a href="login.html"><span class="material-symbols-sharp header-icon">person</span></a>
-            <a href="carrinho-compras.html"><span class="material-symbols-sharp header-icon">shopping_cart</span></a>
+            <a href="./login.html"><span class="material-symbols-sharp header-icon">person</span></a>
+            <span class="material-symbols-sharp header-icon">shopping_cart</span>
         </div>
+
+        <div class="menu-navbar">
+            <ul class="container">
+                <li>
+                    <a href="./index.html">Início</a>
+                </li>
+                <span> > </span>
+                <li>
+                    <a href="">Quem Somos</a>
+                </li>
+            </ul>
+        </div>
+    </header>
 
     <main>
-        <div class="nav-bar">
-            <nav class="path-bar">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <span> > </span>
-                    <li><a href="#" class="actual-page">Quem Somos</a></li>
-                </ul>
-            </nav>
-        </div>
 
-        <section class="container-quem-somos">
-            <div class="quem-somos">
-                <img src="./img/banner-quem-somos.png" alt="" class="qs-image">
-                <p class="first-title">NÓS SOMOS A<br> SNEAKERS HOUSE</p>
-                <p class="title-description">Somos ousados, corajosos, apaixonados<br>
-                    por estilo e conforto.</p>
-            </div>
-        </section>
-
-        <section class="presentation">
-            <div class="about">
-                <p class="about-title">Desde 2023</p>
-                <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed
-                    urna ex. Nulla accumsan nunc et justo elementum, non porttitor metus pharetra. Pellentesque in neque
-                    in arcu elementum elementum ut eget mi. Mauris pulvinar consectetur augue. Quisque venenatis nec
-                    purus at tincidunt.
-                    <br><br>
-                    Aliquam iaculis, justo rhoncus ultricies malesuada, nunc quam aliquam eros, nec varius orci lorem a
-                    quam. Fusce hendrerit euismod tortor, ut laoreet nisi. Cras id velit ut enim scelerisque mattis.
-                    Cras faucibus luctus dolor, ac faucibus mi consectetur et. Nunc vel quam neque.
-                </p>
-
-                <img src="./img/nike_rosa.png" alt="" class="nike-rosa">
-                <img src="./img/nike_amarelo.png" alt="" class="nike-amarelo">
-            </div>
-
-        </section>
-
-        <section class="second-presentation">
-            <div class="container movement">
-                <div class="movement-manifest">
-                    
-                    <p class="movement-title">ESTAMOS SEMPRE EM</p>
-                    <p class="movement-word">MOVIMENTO</p>
-                    <p class="movement-description">Do esporte ao dia a dia.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="numbers-presentation">
-            <div class="container presentation">
-                <div class="numbers">
-                    <!-- <p class="numbers-title">MAIS DE</p> -->
-                    <p class="numbers-01">20<br> tipos de<br> <span class="word">CHUTEIRAS</span></p>
-                    <p class="numbers-02"><span>33<br></span>tênis de<br><span class="word-apart">CANO ALTO</span></p>
-                    <p class="numbers-03">35<br> tênis de<br> <span class="word">CORRIDA</span></p>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="contact">
-            <div class="contact-info image">
+        <section class="quem-somos">
+            <div class="slide slide_01">
                 <div class="container">
+                    <p class="titulo">NÓS SOMOS A<br> SNEAKERS HOUSE</p>
+                    <p class="subtitulo">Somos ousados, corajosos, apaixonados<br>
+                        por estilo e conforto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="apresentacao-empresa">
+            <div class="sobre">
+                <div class="sobre-infos">
+                    <h1 class="sobre-titulo">Desde 2023</h1>
+                    <p class="sobre-descricao">A Sneakers House nasceu em 2023, da vontade de 5 alunos de programação de revolucionar o mercado de calçados.<br> A Sneakers House é mais que uma loja, é um conceito. <br>Somos apaixonados por conforto e por estilo e temos certeza que o tênis pode estar presente em todas as ocasiões. Ousamos incluir os sneakers em todos os momentos do dia e da vida, desde a caminhada, o futebol do fim de semana ou profissional, até aquela festa mais arrumadinha. 
+                      
+                </div>
+
+                <div class="apresentacao-imagens">
+                    <img src="./img/nike_rosa.png" alt="" class="nike-rosa">
+                    <img src="./img/nike_amarelo.png" alt="" class="nike-amarelo">
+                </div>
+            </div>
+
+        </section>
+
+         <section class="segunda-apresentacao">
+            <div class="apresentacao">
+                <div class="container">
+                    <p class="segundo-titulo">ESTAMOS SEMPRE<br> EM <span class="movimento">MOVIMENTO</span></p>
+                    
+                    <p class="movimento-frase">Do esporte ao dia a dia.</p>
+
+                    <img src="./img/Marta.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="apresentacao-numeros">
+            <div class="container apresentacao-numrs">
+                <div class="num-titulo">
+                    <h1 class="numeros-titulo">MAIS DE</h1>
+                </div>
+                <div class="numeros">
+                    
+                    <p class="numero01">20<br> tipos de<br> <span class="word">CHUTEIRAS</span></p>
+                    <p class="numero02"><span>33</span><br>tênis de<br><span class="word-apart">CANO ALTO</span></p>
+                    <p class="numero03">35<br> tênis de<br> <span class="word">CORRIDA</span></p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contato">
+            <div class="contato-info">
+                <div class="container contato-infos">
                     <p class="titulo">Contatos</p>
                     <p class="subtitulo-cidade">Rio de Janeiro</p>
-                    <p class="contacts">Praia de Botafogo, 2000<br>
+                    <p class="contatos">Praia de Botafogo, 2000<br>
                         sneakershouserio@sh.com.br</p>
                     <p class="subtitulo-cidade">São Paulo</p>
-                    <p class="contacts">Avenida Paulista, 2000<br>
+                    <p class="contatos">Avenida Paulista, 2000<br>
                         sneakershousesp@sh.com.br</p>
                 </div>
             </div>
