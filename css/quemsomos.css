@@ -1,4 +1,36 @@
 
+.nav-bar {
+    background-color: #F0EEED;
+    height: 45px;
+    padding: 1px;
+}
+
+.path-bar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 14;
+    margin-left: 310px;
+    position: absolute;
+    letter-spacing: 0.05em;
+
+}
+
+.path-bar ul li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.path-bar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.actual-page {
+    color: #FF4F4F !important;
+}
+
+
 
 .qs-image {
     width: 100%;
@@ -30,16 +62,17 @@
     letter-spacing: 0.05em;
 }
 
+
 .about-title {
     position: absolute;
     width: 375px;
     height: 77px;
     margin-left: 150px;
-    top: 670px;
+    top: 770px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 900;
-    font-size: 64px;
+    font-size: 50px;
     line-height: 77px;
     letter-spacing: 0.05em;
 }
@@ -49,7 +82,7 @@
     width: 773px;
     height: 277px;
     margin-left: 150px;
-    top: 886px;
+    top: 900px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
@@ -72,14 +105,6 @@
     height: 768px;
     left: 740px;
     top: 715px;
-}
-
-.img-richarlison {
-    position: absolute;
-    width: 85%;
-    height: 700px;
-    left: 228px;
-    top: 1353px;
 }
 
 .movement-title {
@@ -140,8 +165,10 @@
     line-height: 77px;
 }*/
 
+
 .numbers p {
     position: absolute;
+    margin-left: 200px;
     width: 391px;
     height: 261px;
     top: 2100px;
@@ -180,9 +207,27 @@ span {
     left: 990px;
 }
 
-.contact-img {
-    position: absolute;
-    width: 100%;
+.titulo {
+    font-size: 70px;
+    padding-top: 146px;
+}
+
+.subtitulo-cidade {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.contacts {
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.image {
+    background-image: url(../img/runner.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
     height: 1100px;
-    top: 2600px;
+    margin-top: 2000px;
+    width: 100%;
 }

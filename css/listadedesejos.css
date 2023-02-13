@@ -1,10 +1,143 @@
-.lista-desejos {
-    background: #F6F6F6; 
-    padding: 15px 10px 35px; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    border-radius: 10px; 
-    background: linear-gradient(180deg, #F6F6F6 0%, #D6D6D6 100%);
+.nav-bar {
+    background-color: #F0EEED;
+    height: 45px;
+    padding: 1px;
+}
 
+.path-bar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 14;
+    margin-left: 310px;
+    position: absolute;
+    letter-spacing: 0.05em;
+
+}
+
+.path-bar ul li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.path-bar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.actual-page {
+    color: #FF4F4F !important;
+}
+
+
+.lista-desejo-lista-produtos {
+    list-style: none;
+}
+
+
+.lista-desejos-texto {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    height: 46px;
+}
+
+.lista-desejos-compartilhar-lista {
+    text-decoration: none;
+}
+
+.lista-desejos-texto-titulo {
+    margin-left: -40px;
+    font-size: 30px;
+}
+
+.lista-desejos-compartilhar-lista {
+    margin-left: 300px;
+    margin-top: 10px;
+    
+}
+
+.lista-desejos-buscar-filtrar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.list-search {
+    width: 196px;
+    height: 12px;
+}
+
+.lista-desejos-buscar {
+    margin-right: 30px;
+    margin-top: 10px;
+    
+}
+
+.lista-desejos-filtrar {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.lista-produtos-produto {
+    margin-top: 50px;
+}
+
+.lista-desejo-lista-mayze {
+    padding-bottom: 70px;
+    border-bottom: 1px solid #000;
+    padding-top: 50px;
+}
+
+.lista-desejo-lista-mayze img {
+    background: linear-gradient(180deg, #F6F6F6 0%, #D6D6D6 100%);
+    border-radius: 10px;
+}
+
+.tenis-mayze-informacoes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: -290px;
+    margin-left: 300px;
+}
+
+.tenis-cores, .tenis-tamanho {
+    font-size: 16px;
+    margin-top: -15px;
+}
+
+.produto-quantidade {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.imgem-valores{
+    margin-left: 700px;
+    font-size: 20px;
+    margin-top: -40px;
+}
+
+.tenis-mayze-informacoes select {
+    margin-top: -20px;
+    width: 80px;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 10;
+}
+
+.desejos-adicionar-carrinho-btn {
+    background-color: transparent;
+    border-color: #000;
+    padding: 14px 15px;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.desejos-adicionar-carrinho-btn:hover {
+    background-color: #FF4F4F;
 }
