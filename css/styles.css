@@ -70,9 +70,8 @@ input.header-search {padding: 5px;}
 
 .carousel-home-produtos{margin-top: 40px;}
 .lista-categorias {display: flex; list-style: none; justify-content: space-between; margin: 0; column-gap: 20px; padding: 10px 0}
-.lista-categorias > li {border-radius: 10px; border: solid #fff 1px; color: #fff; text-align: center;}
+.lista-categorias > li {border-radius: 10px; border: solid #fff 1px; color: #fff; text-align: center; width: calc(25% - 3rem);}
 .lista-categorias li img {width: 100%;}
-.lc2{flex-wrap: wrap;}
 .lista-categorias img {transition: 0.5s all ease-in-out;}
 .lista-categorias img:hover {transform: scale(1.1);}
 
@@ -90,6 +89,7 @@ input.header-search {padding: 5px;}
 .produtos-cores ul {display: flex; list-style: none; column-gap: 5px; margin-bottom: 10px; padding-left: 0;}
 .lista-produtos .produtos-cores ul{display: none;}
 .lista-produtos:hover .produtos-cores ul{display: flex;}
+.lista-produtos a{min-height: 210px; display: flex; align-items: center;}
 
 
 .banners-esportes{margin-top: 80px;}
