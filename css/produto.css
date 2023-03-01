@@ -55,10 +55,19 @@ select.select-qtdade-box {
     border: 1px solid #FF4F4F;
 }
 
-.imagem-principal img{
-    width: 550px;
-    height: 550px;
+.imagem-principal{
+    min-width: 500px;
+    height: 500px;
     border-radius: 15px;
+    padding: 25px;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.imagem-principal img {
+    width: 100%;
+    height: auto;
 }
 
 .produto-infos {

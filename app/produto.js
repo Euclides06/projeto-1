@@ -1,31 +1,43 @@
-import produtos from './produtos.js'
-let container = document.getElementById('single-product')
+import produtos from './produtos.js';
+let container = document.getElementById('single-product');
 
-// Função que captura o url / sku do produto e recebe o callback para exibir o produto
-function capturarProduto() {
+
+//Função que mostra as imagens secundárias
+let imagensProduto = (p) => {
+    let containerImagens = document.getElementById('imagens-secundarias')
+    let imagensMostrar = p.imagens.map((imagem, index) => {
+        return `<img src=${imagem} />`
+    })
+    containerImagens.innerHTML = `${imagensMostrar}`
+}
+
+// Função que captura o url / sku do produto e recebe os callbacks para exibir o produto
+const capturarProduto = () => {
     let url = window.location.href;
     let parts = url.split('#');
-    let skuProduto = parts.pop() || parts.pop();   
-    let produto = produtos.filter(prod => prod.sku == skuProduto)
+    let skuProduto = parts.pop() || parts.pop();
+    let produto = produtos.find(prod => prod.sku == skuProduto);
+    console.log(produto)
     exibirProduto(produto)
+    imagensProduto(produto)
 }
 
 // Função de callback
 const exibirProduto = (p) => {
     container.innerHTML = `
-        <div class="produto-escolha">    
+                <div class="produto-escolha" id="imagens-secundarias">    
                     <img class="produto-escolha-img" src="./img/tenis_forum_bold_branco.png" alt="">
                     <img class="produto-escolha-img" src="./img/tenis-forum-2.png" alt="">
                     <img class="produto-escolha-img" src="./img/tenis-forum-3.png" alt="">
                 </div>
                 <div class="imagem-principal">
-                    <img src="${p[0].imagemDestaque}" alt="">
+                    <img src="${p.imagemDestaque}" alt="">
                 </div>
 
                 <div class="produto-infos">
                     <div class="produto-infos-detalhes">
-                        <h2 class="produto-infos-titulo">${p[0].nome}</h2>
-                        <h3 class="produto-infos-valor">R$ ${p[0].valor}</h3>
+                        <h2 class="produto-infos-titulo">${p.nome}</h2>
+                        <h3 class="produto-infos-valor">R$ ${p.valor}</h3>
                         <span class="produto-infos-parcelamento">em até 10x R$ 49,99 sem juros</span>
                         <div class="quantidade-likes-dislike">
                             <img src="./img/avaliacoes_5.png" alt="">
