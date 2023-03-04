@@ -94,6 +94,8 @@ select.select-qtdade-box {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    column-gap: 1rem;
+    margin-top: 20px;
 }
 
 .produto-infos-entrega-frete {
@@ -111,8 +113,6 @@ select.select-qtdade-box {
 
 .produto-infos-entrega .material-symbols-outlined {
     font-size: 50px;
-    margin-top: 30px;
-    margin-right: 5px;
 }
 
 .delivery-icon {
@@ -141,7 +141,7 @@ select.select-qtdade-box {
     justify-content: space-between;
     background: linear-gradient(180deg, rgba(217, 217, 217, 0.19) 0%, rgba(231, 231, 231, 0.1) 100%);
     margin-top: 60px;
-    padding: 40px 0 80px;
+    padding: 60px 0;
 }
 
 /* .sobre-produto-imagem {
@@ -156,17 +156,17 @@ select.select-qtdade-box {
 }*/
 
 .sobre-dir img {
-    width: 450px;
+    width: 400px;
 }
 
-.sobre-esq{width: 80%;}
 .sobre-produto-titulo{
-    margin-bottom: 0;
-    padding-bottom: 0;
+    padding: 0;
+    margin: 0;
 }
 .sobre-produto .container{
     display: flex;
     align-items: center;
+    column-gap: 20px;
 }
 
 .sobre-produto-titulo {
@@ -175,10 +175,6 @@ select.select-qtdade-box {
     font-style: normal;
 }
 
-.descricao-paragrafo {
-    font-size: 20px;
-    margin-top: 48px;
-}
 
 .produto-avaliacoes {
     flex-direction: column;
@@ -342,13 +338,12 @@ section {
 .botao-eu-quero {
     border: 1px solid #000000;
     border-radius: 10px;
-    margin-bottom: 30px;
 } 
 
 .produtos-collabs-marcas {
     display: flex;
     justify-content: center;
-    margin-bottom: 210px;
+    margin-bottom: 60px;
 }
 
 .produtos-collabs h3 {
@@ -373,3 +368,21 @@ section {
 
 .header-icon{color: #F6F6F6;}
 
+h2.produto-infos-titulo {
+    margin: 0 0 1rem 0;
+    padding: 0;
+    text-align: left;
+}
+
+.colors{width:25px; height:25px;}
+.color-verde{background-color: green;}
+.color-azul{background-color: blue;}
+.color-preto{background-color: black;}
+.color-branco{border: 1px solid #eee;}
+.color-marrom{background-color: rgb(78, 0, 0);}
+.color-azul-claro{background-color: rgb(172, 198, 255);}
+
+.color-multicolor  {background: -webkit-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+    background: -o-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+    background: -moz-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+    background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);}
