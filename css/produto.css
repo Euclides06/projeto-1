@@ -1,6 +1,6 @@
 .produto-unico{display: flex; column-gap: 1rem; margin-top: 2rem; padding-top: 30px ;}
 
-.produto-infos-detalhes h2{margin-top: 0; padding: 0; text-align: left;}
+.produto-infos-detalhes .accordion{margin-top: 0; padding: 0; text-align: left;}
 
 h3.produto-infos-valor {
     margin: 0;
@@ -239,7 +239,7 @@ section {
     font-size: 16px;
 }
 
-h2 {
+.accordion {
     font-style: normal;
     font-weight: 300;
     font-size: 30px;
@@ -248,7 +248,21 @@ h2 {
     letter-spacing: 0.2em;
     color: #000;
     padding: 30px 0;
+    background-color: #FFF;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
 }
+
+.panel {
+    background-color: white;
+    display: none;
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
 
 .lista-semelhantes {
     padding-top: 0;
