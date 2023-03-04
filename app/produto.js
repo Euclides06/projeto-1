@@ -1,36 +1,50 @@
 import produtos from './produtos.js';
+
+
 let container = document.getElementById('single-product');
 
+var url = window.location.href;
+var parts = url.split('#');
+var skuProduto = parts.pop() || parts.pop();
+var produto = produtos.find(prod => prod.sku == skuProduto);
 
-//Função que mostra as imagens secundárias
-let imagensProduto = (p) => {
-    let containerImagens = document.getElementById('imagens-secundarias')
-    let imagensMostrar = p.imagens.map((imagem, index) => {
-        return `<img src=${imagem} />`
-    })
-    containerImagens.innerHTML = `${imagensMostrar}`
-}
-
-// Função que captura o url / sku do produto e recebe os callbacks para exibir o produto
 const capturarProduto = () => {
-    let url = window.location.href;
-    let parts = url.split('#');
-    let skuProduto = parts.pop() || parts.pop();
-    let produto = produtos.find(prod => prod.sku == skuProduto);
-    console.log(produto)
     exibirProduto(produto)
     imagensProduto(produto)
+}
+
+// //Função que mostra as imagens secundárias
+const imagensProduto = (p) => {
+    let containerImagens = document.getElementById('imagens-secundarias')
+    p.imagens.forEach((element, index) => {
+        containerImagens.innerHTML += `<div class="add-img"><img src="${element}" class="imagemsec" id="${index}" /></div>`
+    })
+    let imgButton = document.querySelectorAll('.imagemsec')
+    for (var i = 0; i < imgButton.length; i++) {
+        imgButton[i].addEventListener("click", bindClick(i, imgButton));
+    }
+}
+
+const bindClick = (i, arr) => {
+    var imgPrincipal = document.getElementById('imagem-principal')
+    return function () {
+        imgPrincipal.querySelector('img').src = arr[i].src
+    }
+}
+
+var showSizes = () => {
+    const sizes = produto.tamanhos
+    sizes.forEach((size, index) => {
+    `<p>${size}</p>`
+}
+    )
 }
 
 // Função de callback
 const exibirProduto = (p) => {
     container.innerHTML = `
-                <div class="produto-escolha" id="imagens-secundarias">    
-                    <img class="produto-escolha-img" src="./img/tenis_forum_bold_branco.png" alt="">
-                    <img class="produto-escolha-img" src="./img/tenis-forum-2.png" alt="">
-                    <img class="produto-escolha-img" src="./img/tenis-forum-3.png" alt="">
-                </div>
-                <div class="imagem-principal">
+                <div class="produto-escolha" id="imagens-secundarias">            </div>
+                <div class="imagem-principal" id="imagem-principal">
                     <img src="${p.imagemDestaque}" alt="">
                 </div>
 
@@ -45,13 +59,8 @@ const exibirProduto = (p) => {
                         </div>
                         <div class="escolhertamanho">
                             <h3 class="produto-infos-tamanhos-titulo">Tamanhos</h3>
+                            ${showSizes()}
                             <select class="select-qtdade-box">
-                                <option value="35">35</option>
-                                <option value="36">36</option>
-                                <option value="37">37</option>
-                                <option value="38">38</option>
-                                <option value="39">39</option>
-                                <option value="40">40</option>
                             </select>
                         </div>
                         <div class="escolhercores">
@@ -62,7 +71,6 @@ const exibirProduto = (p) => {
                             <img src="./img/cores/Rectangle 52.png" alt="">
                         </div>
                     </div>
-                    <!--o problema tá aqui-->
 
                     <div class="produto-infos-entrega">
                         <button class="botao-eu-quero">ADICIONAR AO CARRINHO</button>
@@ -77,7 +85,7 @@ const exibirProduto = (p) => {
                         <button class="botao-eu-quero">Clique aqui para calcular frete</button>
                     </div>
                 </div>
-                `
+                `;
 }
 
 capturarProduto()
