@@ -31,7 +31,7 @@ const exibirProduto = (p) => {
                     <img class="produto-escolha-img" src="./img/tenis-forum-3.png" alt="">
                 </div>
                 <div class="imagem-principal">
-                    <img src="${p.imagemDestaque}" alt="">
+                    <img src="${p.imagemDestaque}" class="imagem-principal-produto" alt="">
                 </div>
 
                 <div class="produto-infos">
@@ -65,7 +65,7 @@ const exibirProduto = (p) => {
                     <!--o problema tá aqui-->
 
                     <div class="produto-infos-entrega">
-                        <button class="botao-eu-quero">ADICIONAR AO CARRINHO</button>
+                        <button class="botao-carrinho botao-eu-quero">ADICIONAR AO CARRINHO</button>
                         <div class="produto-infos-entrega-adicionar">
                             <span class="material-symbols-outlined">local_shipping</span>
             
