@@ -21,9 +21,9 @@ function exibirProdutosHome() {
 exibirProdutosHome()
 
 // Função Ofertas
-function exibirOfertasHome(produtos){
+function exibirOfertasHome(produtos) {
     produtosOFertas.forEach(produto => {
-    elOfertasHome.innerHTML += `
+        elOfertasHome.innerHTML += `
         <li class="lista-produtos">
                 <a href="produto.html#${produto.sku}"><img src='${produto.imagemDestaque}' /></a>
                 <div class="produtos-cores">
@@ -34,19 +34,19 @@ function exibirOfertasHome(produtos){
                 </div>
                 <h4>${produto.nome}</h4>
                 <div class="imgem-valores">
-                    <span class="promocao">${produto.desconto}</span>
-                    <span class="valor-real">${produto.valor}</span>
+                <span class="valor-real">de R$ ${produto.valor}</span>
+                    <span class="promocao">por R$ ${produto.desconto}</span>
                 </div>
                 <button class="botao-eu-quero">EU QUERO</button>            
         </li>
-        ` 
-})
+        `
+    })
 }
 
 // Função Destaques
-function destaquesHome(produtos){
+function destaquesHome(produtos) {
     produtosDestaques.forEach(produto => {
-    elDestaquesHome.innerHTML += `
+        elDestaquesHome.innerHTML += `
         <li class="lista-produtos">
                 <a href="produto.html#${produto.sku}"><img src='${produto.imagemDestaque}' /></a>
                 <div class="produtos-cores">
@@ -57,12 +57,12 @@ function destaquesHome(produtos){
                 </div>
                 <h4>${produto.nome}</h4>
                 <div class="imgem-valores">
-                    <span class="promocao">${produto.desconto}</span>
-                    <span class="valor-real">${produto.valor}</span>
+                <span class="valor-real">de R$ ${produto.valor}</span>
+                <span class="promocao">por R$ ${produto.desconto}</span>
                 </div>
                 <button class="botao-eu-quero">EU QUERO</button>
         </li>
-        ` 
-})
+        `
+    })
 }
 

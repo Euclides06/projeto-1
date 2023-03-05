@@ -15,8 +15,8 @@ const capturarProduto = () => {
 }
 
 // função do valor parcelado
-const dividePrice = (p) => {
-    const valor = parseFloat(p.replace(',', '.') / 10);
+const dividePrice = (v) => {
+    const valor = parseFloat(v.replace(',', '.') / 10);
     const format = valor.toFixed(2).toString().replace('.', ',')
     return format
 }
@@ -73,8 +73,8 @@ const exibirProduto = (p) => {
                 <div class="produto-infos">
                     <div class="produto-infos-detalhes">
                         <h2 class="produto-infos-titulo">${p.nome}</h2>
-                        <h3 class="produto-infos-valor">R$ ${p.valor}</h3>
-                        <span class="produto-infos-parcelamento">em até 10x R$ ${dividePrice(p.valor)} sem juros</span>
+                        <h3 class="produto-infos-valor">de R$ ${p.valor} por <span style="font-size:20px;"><strong>R$ ${p.desconto}</strong></span></h3>
+                        <span class="produto-infos-parcelamento">em até 10x R$ ${dividePrice(p.desconto)} sem juros</span>
                         <div class="quantidade-likes-dislike">
                             <img src="./img/avaliacoes_5.png" alt="">
                             <h6>(13 avaliações)</h6>
