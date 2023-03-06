@@ -9,6 +9,7 @@ var parts = url.split('#');
 var skuProduto = parts.pop() || parts.pop();
 var produto = produtos.find(prod => prod.sku == skuProduto);
 
+
 const capturarProduto = () => {
     exibirProduto(produto)
     imagensProduto(produto)
@@ -146,3 +147,17 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+//EVENTO CARRINHO - SALVO NO LOCAL STORE
+
+const addToCarButtons = document.getElementsByClassName('botao-carrinho')
+for(let i=0; i < addToCarButtons.length; i++) {
+    addToCarButtons[i].addEventListener("click", addProductToCart)
+}
+
+function addProductToCart(){
+        localStorage.setItem(produto.sku, JSON.stringify(produto));
+
+}
+
+

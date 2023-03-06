@@ -7,6 +7,7 @@ const elDestaquesHome = document.getElementById('destaquesHome')
 // Exibe apenas os produtos que estiverem com true em oferta
 const produtosOFertas = produtos.filter(prod => prod.oferta == true)
 
+
 // Exibe apenas os produtos que estiverem com true em destaque
 const produtosDestaques = produtos.filter(prod => prod.destaque == true)
 
