@@ -67,3 +67,14 @@ function destaquesHome(produtos) {
     })
 }
 
+let btMudaCor = document.querySelectorAll('.botao-eu-quero');
+    for(let i = 0; i < btMudaCor.length; i++) { 
+        btMudaCor[i].addEventListener("click", function() { 
+            this.style.background = "red"; 
+        },
+
+        btMudaCor[i].addEventListener("click", function() {
+            this.innerHTML = "ADICIONADO";
+        })
+    )}
+
