@@ -82,7 +82,7 @@ const exibirProduto = (p) => {
                         </div>
                         <div class="escolhertamanho">
                             <h3 class="produto-infos-tamanhos-titulo">Tamanhos</h3>
-                            <select class="select-qtdade-box">
+                            <select class="select-qtdade-box" id="size">
                             ${showSizes()}
                             </select>
                         </div>
@@ -156,8 +156,9 @@ for(let i=0; i < addToCarButtons.length; i++) {
 }
 
 function addProductToCart(){
-        localStorage.setItem(produto.sku, JSON.stringify(produto));
-
+    var sizeCart = document.getElementById('size').value;
+    produto.tamanhos = sizeCart
+    localStorage.setItem(produto.sku, JSON.stringify(produto));
 }
 
 

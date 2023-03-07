@@ -1,36 +1,31 @@
 
-import produtos from './produtos.js';
 const elCarrinho = document.getElementById('produtosCarrinho')
 
+const keys = Object.keys(localStorage);
+var cart = []
+for (var i = 0; i < keys.length; i++) {
+    cart.push(JSON.parse(localStorage.getItem(keys[i])))
+}
 
 
-for (let i = 0; i < produtos.length; i++) {
-    if(localStorage.getItem(produtos[i].sku)){
-            elCarrinho.innerHTML += `
+
+
+for (let i = 0; i < cart.length; i++) {
+    elCarrinho.innerHTML += `
                     <li>
-                        <div class="imagem"><img src="${produtos[i].imagemDestaque}" /></div>
+                        <div class="imagem"><img src="${cart[i].imagemDestaque}" /></div>
                         <div class="infos-carrinho">
-                            <p class="nome-produto">${produtos[i].nome}<strong><span class="material-symbols-outlined botao-remover">delete</span></strong></p>
-                            <div class="cor"><strong>Cor:</strong> Rosa</div>
-                            <div class="tamanho"><strong>Tamanho:</strong> 42</div>
-                            <div class="quantidade">
-                                <strong>Quantidade: </strong>
-                                <input type="number" value="1" min="1" max="3" />
-                            </div>
+                            <p class="nome-produto">${cart[i].nome}<span class="material-symbols-outlined botao-remover" id=${cart[i].sku}>delete</span></strong></p>
+                            <div class="cor"><strong>Cor:</strong> ${cart[i].cores}</div>
+                            <div class="tamanho"><strong>Tamanho:</strong> ${cart[i].tamanhos}</div>
+                            <div class="quantidade">01 unidade</div>
                             <div class="carrinho-produto-rodape">
                                 <div class="imgem-valores">
-                                    <span class="promocao"><strong>Valor: ${produtos[i].desconto}</strong></span>
-                                    <span class="valor-real">${produtos[i].valor}</span>
+                                <span>Valor: de R$ ${cart[i].valor}</span>
+                                    <span class="promocao"><strong>por R$ ${cart[i].desconto}</strong></span>
                                 </div>
                             </div>
                         </div>
                     </li>
             `
-    }
 }
-
-
-
-   
-
-

@@ -103,7 +103,7 @@ let produtos = [
         imagemDestaque: '../img/NewBalanceBlueHaze-01.png',
         imagens: ['../img/NewBalanceBlueHaze-01.png','../img/NewBalanceBlueHaze-02.png', '../img/NewBalanceBlueHaze-03.png'],
         categoria: '1',
-        cores: ['azul-claro'],
+        cores: ['azul Sclaro'],
         valor: '599,90',
         desconto: '299.00',
         descricao: 'Vestido com um bloco de cores Blue Haze e Turtledove. Esta oferta do New Balance 9060 vem construída em uma mistura de materiais de malha, camurça e couro. Outros detalhes incluem logotipos “N” bordados na parte central sobre uma sola de borracha de dois tons para completar o design.',
