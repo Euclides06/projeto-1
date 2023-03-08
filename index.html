@@ -235,17 +235,27 @@
 
     <div id="modal-login" class="modal-container">
         <div class="modal">
-            <div class="login">
+            <form id="form" class="login form">
                 <button class="b-fechar">X</button>
                 <h2>LOGIN</h2>
                 <div id="input-login">
-                    <label for="email">Digite seu e-mail</label>
-                    <input type="email">
-                    <label for="password">Digite sua senha</label>
-                    <input type="password">
+                    <div class="form-control">
+                        <label for="email">Digite seu e-mail</label>
+                        <input type="email" id="email">
+                        <i><img class="img-success" src="./img/success-icon.svg" alt=""/></i>
+                        <i><img class="img-error" src="./img/error-icon.svg" alt=""/></i>
+                        <small>Error massage</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Digite sua senha</label>
+                        <input type="password" id="password">
+                        <i><img class="img-success" src="./img/success-icon.svg" alt=""></i>
+                        <i><img class="img-error" src="./img/error-icon.svg" alt=""></i>
+                        <small>Error massage</small>
+                    </div>
                 </div>
                 <div class="button-login">
-                    <button class="botao-vermelho">Entrar</button>
+                    <button type="submit" class="botao-vermelho">Entrar</button>
                     <a href="" class="esqueci-senha">Esqueci minha senha</a>
                 </div>
                 <div class="redesocial-login">
@@ -254,7 +264,7 @@
                     <img src="./img/redeSocial/google.png" alt="">
                     <span>Entrar com o Google</span>
                 </div>
-            </div>
+            </form>
             <div class="msg-criarConta">
                 <h3><strong>Ainda não tem uma conta? </strong><a class="criar-conta">Clique aqui para criar.</a></h3>
             </div>
@@ -263,7 +273,7 @@
         <div id="modal-cadastro" class="modal-container">
             <div class="modal-cadastro">
                 <button class="b-fechar">X</button>
-                <form ID="formulario" class="flex-2">
+                <form ID="form" class="flex-2">
                     <section class="container">
                         <div class="cadastro">
                             <h2 class="h2-cadastro">INFORMAÇÕES PESSOAIS</h2>

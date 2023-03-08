@@ -312,3 +312,77 @@ h2.h2-cadastro{
     font-size: 1.2em;
     
 }
+
+/* FORMULARIOS */ 
+
+
+.form {
+    padding: 0 40px 30px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #828CAD;
+}
+
+.form-control input {
+    border: 2px solid #3E445B;
+    border-radius: 5px;
+    outline: 0;
+
+    display: block;
+
+    font-size: 14px;
+
+    width: 95%;
+    padding: 8px;
+}
+
+.form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.error .img-error {
+    visibility: visible;
+}
+
+.form-control.success .img-success {
+    visibility: visible;
+}
+
+.form-control.error small{
+    color: #DB5A5A;
+    visibility: visible;
+}
+
+.form-control i {
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+
+}
+
+
+
+

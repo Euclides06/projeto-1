@@ -1,4 +1,3 @@
-
 const elCarrinho = document.getElementById('produtosCarrinho')
 
 const keys = Object.keys(localStorage);
@@ -39,12 +38,5 @@ for(let i = 0; i < removeProduct.length; i++){
             location.reload();
 
     })
-}
-
-// ADICIONANDO NUMERO NO CARRINHO
-
-const addNumberCar = document.querySelector('.addNumberCar')
-if(cart.length > 0){
-    addNumberCar.innerHTML += `<label class="numberCar">${cart.length}</label>`
 }
 
