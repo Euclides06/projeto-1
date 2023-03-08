@@ -363,7 +363,20 @@ section {
 }
 
 .botao-ver-mais:hover {
-    background-color: #000; color: #fff;
+    background-color: #000; 
+    color: #fff;
+}
+
+.bota-frete {
+    background:transparent; 
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.botao-frete:hover {
+    background-color: #000; 
+    color: #fff;
 }
 
 .header-icon{color: #F6F6F6;}
