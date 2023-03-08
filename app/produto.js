@@ -102,7 +102,7 @@ const exibirProduto = (p) => {
                                     por boleto ou pix</p>
                         </div>
 
-                        <button class="botao-eu-quero">Clique aqui para calcular frete</button>
+                        <button class="botao-frete">Clique aqui para calcular frete</button>
                     </div>
                 </div>
                 
@@ -160,5 +160,21 @@ function addProductToCart(){
     produto.tamanhos = sizeCart
     localStorage.setItem(produto.sku, JSON.stringify(produto));
 }
+
+let btMudaCor = document.querySelectorAll('.botao-eu-quero');
+
+    for(let i = 0; i < btMudaCor.length; i++) {
+
+        btMudaCor[i].addEventListener("click", function() {
+
+            this.style.background = "#FF4F4F";
+
+            this.innerHTML = "PRODUTO ADICIONADO";
+
+            this.style.width = "248px";
+
+        }
+
+)}
 
 
