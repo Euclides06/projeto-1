@@ -20,3 +20,14 @@ cadastro.addEventListener('click', () => iniciarModal('modal-cadastro'))
 
 const returnLogin = document.querySelector('.entrar-login');
 returnLogin.addEventListener('click', () => iniciarModal('modal-login'))
+
+
+// ADICIONANDO NUMERO NO CARRINHO
+
+const keys = Object.keys(localStorage);
+
+const addNumberCar = document.querySelector('.addNumberCar')
+if(keys.length > 0){
+    addNumberCar.innerHTML += `<label class="numberCar">${keys.length}</label>`
+}
+

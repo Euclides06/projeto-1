@@ -57,7 +57,9 @@
             <input type="text" class="header-search" placeholder="Buscar">
             <a href="listadedesejos.html"><span class="material-symbols-outlined header-icon">favorite</span></a>
             <span id="login" class="material-symbols-sharp header-icon">person</span>
-            <a href="carrinho-compras.html"><span class="material-symbols-sharp header-icon">shopping_cart</span></a>
+            <div class="addNumberCar">
+                <a href="carrinho-compras.html"><span class="material-symbols-sharp header-icon">shopping_cart</span></a>
+            </div>
         </div>
     </header>
     <main>
@@ -261,7 +263,7 @@
         <div id="modal-cadastro" class="modal-container">
             <div class="modal-cadastro">
                 <button class="b-fechar">X</button>
-                <div class="flex-2">
+                <form ID="formulario" class="flex-2">
                     <section class="container">
                         <div class="cadastro">
                             <h2 class="h2-cadastro">INFORMAÇÕES PESSOAIS</h2>
@@ -305,11 +307,11 @@
                                 <input type="number"> 
                             </div>
                             <div class="button-cadastro">
-                                <button class="botao-vermelho">Entrar</button>
+                                <button type="submit" class="botao-vermelho">Entrar</button>
                             </div>
                         </div>
                     </section>
-                </div>
+                </form>
                 <div class="msg-criarConta">
                     <h3><strong>Já tem uma conta? </strong><a class="entrar-login">Clique aqui para entrar.</a></h3>
                 </div>

@@ -159,6 +159,10 @@ function addProductToCart(){
     var sizeCart = document.getElementById('size').value;
     produto.tamanhos = sizeCart
     localStorage.setItem(produto.sku, JSON.stringify(produto));
+    location.reload();
+
 }
+
+
 
 
