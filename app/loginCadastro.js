@@ -1,14 +1,15 @@
-// Modal Login & Cadastro
 
-function iniciarModal(modal){
+// Modal Login & Cadastro
+function iniciarModal(modal) {
     const modalLogin = document.getElementById(modal);
     modalLogin.classList.add('mostrar');
     modalLogin.addEventListener('click', (evento) => {
-        if(evento.target.id == modal || evento.target.className == 'b-fechar' || evento.target.className == "criar-conta" || evento.target.className == 'entrar-login'){
+        if (evento.target.id == modal || evento.target.className == 'b-fechar' || evento.target.className == "criar-conta" || evento.target.className == 'entrar-login') {
             modalLogin.classList.remove('mostrar');
         }
     }
-)}
+    )
+}
 
 
 const login = document.querySelector('#login');
@@ -26,7 +27,7 @@ returnLogin.addEventListener('click', () => iniciarModal('modal-login'))
 const keys = Object.keys(localStorage);
 
 const addNumberCar = document.querySelector('.addNumberCar')
-if(keys.length > 0){
+if (keys.length > 0) {
     addNumberCar.innerHTML += `<label class="numberCar">${keys.length}</label>`
 }
 
@@ -39,50 +40,36 @@ const password = document.getElementById("password")
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-
     checkInputs()
 })
 
 
-function checkInputs(){
+function checkInputs() {
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
 
-    if(emailValue === ''){
-
+    if (emailValue === '') {
         errorValidation(email, 'Digite o seu e-mail')
-
     } else {
-
         sucessValidation(email)
     }
 
-
-
-    if(passwordValue === ''){
-
+    if (passwordValue === '') {
         errorValidation(password, 'Digite a senha')
-
     } else {
-
         sucessValidation(password)
     }
-
 }
 
-function errorValidation(input, menssage){
+function errorValidation(input, menssage) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small')
-
     small.innerText = menssage
-
     formControl.className = 'form-control error'
-
 }
 
-function sucessValidation(input){
+function sucessValidation(input) {
     const formControl = input.parentElement;
-
     formControl.className = 'form-control success'
 }
 

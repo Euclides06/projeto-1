@@ -93,7 +93,7 @@ const exibirProduto = (p) => {
                     </div>
 
                     <div class="produto-infos-entrega">
-                        <button class="botao-carrinho botao-eu-quero">ADICIONAR AO CARRINHO</button>
+                        <button class="botao-carrinho botao-eu-quero" id="cartAdd">ADICIONAR AO CARRINHO</button>
                         <div class="produto-infos-entrega-adicionar">
                             <span class="material-symbols-outlined">local_shipping</span>
             
@@ -151,33 +151,24 @@ for (i = 0; i < acc.length; i++) {
 //EVENTO CARRINHO - SALVO NO LOCAL STORE
 
 const addToCarButtons = document.getElementsByClassName('botao-carrinho')
-for(let i=0; i < addToCarButtons.length; i++) {
+for (let i = 0; i < addToCarButtons.length; i++) {
     addToCarButtons[i].addEventListener("click", addProductToCart)
 }
 
-function addProductToCart(){
+function addProductToCart() {
     var sizeCart = document.getElementById('size').value;
     produto.tamanhos = sizeCart
     localStorage.setItem(produto.sku, JSON.stringify(produto));
     location.reload();
-
 }
 
-let btMudaCor = document.querySelectorAll('.botao-eu-quero');
-
-    for(let i = 0; i < btMudaCor.length; i++) {
-
-        btMudaCor[i].addEventListener("click", function() {
-
-            this.style.background = "#FF4F4F";
-
-            this.innerHTML = "PRODUTO ADICIONADO";
-
-            this.style.width = "248px";
-
-        }
-
-)}
+let btMudaCor = document.getElementById('cartAdd');
+btMudaCor.addEventListener("click", function () {
+    btMudaCor.style.background = "#FF4F4F";
+    btMudaCor.innerHTML = "PRODUTO ADICIONADO";
+    btMudaCor.style.width = "248px";
+}
+)
 
 
 

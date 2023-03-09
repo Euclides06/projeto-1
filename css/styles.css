@@ -383,6 +383,8 @@ h2.h2-cadastro{
 
 }
 
-
+.categorias-produtos ul.lista-categorias {
+    flex-wrap: wrap;
+}
 
 

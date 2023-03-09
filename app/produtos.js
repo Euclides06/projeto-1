@@ -10,7 +10,7 @@ let produtos = [
         valor: '399,90',
         desconto: '299.00',
         descricao: 'O Tênis New Balance 550 homenageia o calçado original de basquete criado em 1989, época que definiu uma geração de atletas da modalidade. O modelo oferece fechamento em cadarço para um ajuste seguro e traz originalidade aos looks casuais.',
-        tamanhos: [34, 35, 36, 37, 38, 39, 40],
+        tamanhos: [34, 35, 36, 37, 38, 39, 40, 41, 42, 43],
         destaque: true,
         oferta: false,
     }
